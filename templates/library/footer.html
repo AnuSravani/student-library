@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> -->
+
+
+<style>
+
+/*---------------------------------------
+   Social section
+-----------------------------------------*/
+footer {
+    padding: 0px 0px 0px 0px;
+    background-color:black;
+    margin:0px;
+}
+.fa {
+  padding: 20px;
+  font-size: 23px;
+  width: 60px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.5;
+    text-decoration: none;
+}
+
+.fa-facebook {
+  color: grey;
+  margin-top: 20px;
+}
+.fa-whatsapp {
+  background: #25d366;
+  color: grey;
+}
+.fa-twitter {
+  background: #55ACEE;
+  color: grey;
+}
+.fa-instagram {
+  background: #125688;
+  color: grey;
+}
+
+p{text-align:center;
+
+}
+
+
+
+
+
+</style>
+</head>
+
+<footer>
+
+  <!-- <p>
+  <a href="" class="fa fa-facebook"></a>
+  <a href="https://api.whatsapp.com/send?phone=917036037203&text=Hello%20Mohammad%20Burhan.%0d%0aHow%20are%20you%20%3f%0d%0aI%20came%20from%20your%20website.&source=&data=#" class="fa fa-whatsapp"></a>
+  <a href="" class="fa fa-instagram"></a>
+  <a href="" class="fa fa-twitter"></a>
+  </p> -->
+
+<br>
+<h1 style="color: grey;"><img src="{% static 'images/open-book.png' %}" alt="" height="40px" width="40px" style="    margin-left: 32px;
+    margin-top: -12px;"> Library Management</h1> <br>
+  <div class="container">
+    <div class="row">
+              <div class="col-3"  style="color: grey;">
+                <h5>CONTENT</h5>
+                  Add books<br>
+                  Available books<br>
+                  Issued book<br>
+                  New book<br>
+                
+              
+              </div>
+              <div class="col-3"  style="color: grey;"> 
+                <h5>TOOLS</h5>
+                <dl>
+                  <dt>Frontend</dt>
+                  <dd>HTML , CSS , Bootsrap , JavaScript</dd>
+                  <dt>Backend</dt>
+                  <dd>Python</dd>
+                  <dt>Database</dt>
+                  <dd>Mysql</dd>
+                </dl>
+                
+              </div>
+              <div class="col-3" style="color: grey;">
+                <h5>ADDRESS</h5>
+                About<br>
+                Contact<br>
+                Service<br>
+              </div>
+              <div class="col-3" style="color: grey;">
+           
+                <h5> QUICK LINKS</h5>
+              <a href="" class="fa fa-facebook" style="background: #282424 "></a>
+               <a href="" class="fa fa-whatsapp" style="background: #282424"></a><br>
+               <a href="" class="fa fa-instagram"  style="background: #282424"></a>
+               <a href="" class="fa fa-twitter"  style="background: #282424 "></a>
+
+              </div>
+    </div>
+  </div>
+  <!-- <div style="height:100px" ></div> -->
+</footer>
+
+</html>

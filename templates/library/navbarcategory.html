@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Navbar with Dropdown and Search Form</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+
+<style>
+    .bs-example{
+        margin: 0px;
+
+    }
+.navbar-brand{
+  font-size: 20px;
+  font-family: sans-serif;
+}
+.btnn{
+  margin-top: 5px;
+  background-color: #247d7b;
+  color: white;
+  
+  }
+
+</style>
+</head>
+<body>
+
+
+
+<div class="bs-example">
+    <nav class="navbar navbar-expand-md bg-light navbar-dark ">
+        <a href="/" class="navbar-brand" style="color: #247d7b; font-weight:600; font-size:30px;" >Library Management</a>
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+            <div class="navbar-nav" >
+                <a href="/" class="nav-item nav-link active" style="color: black;">Home</a>
+
+                <!--for book dropdown button-->
+                <div class="nav-item dropdown">
+                  <a href="{% url 'viewbook' %}" class="nav-link " style="color: black;">View Book</a>
+                </div>
+
+                <!--for issuebook dropdown button-->
+                <div class="nav-item dropdown">
+                  <a href="/login" class="nav-link "  style="color: black;">Issue Book</a>
+                  <!-- <div class="dropdown-menu">
+                    <a href="issuebook" class="dropdown-item" style="color: black;">Issue New Book</a>
+                    <a href="viewissuedbook" class="dropdown-item" style="color: black;">View Issued Book</a>
+                  </div> -->
+                </div>
+
+                <!--for student dropdown button-->
+                <div class="nav-item dropdown">
+                  <!-- <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Student</a> -->
+                  <div class="dropdown-menu">
+                    <!-- <a href="viewstudent" class="dropdown-item">View Student</a> -->
+                  </div>
+                </div>
+
+
+            </div>
+
+            <div class="navbar-nav" >
+                <!-- <a href="logout" class="nav-item nav-link" style="color: black;">LOGOUT</a> &nbsp -->
+                <a href="{% url 'log out' %}"><button type="button" class="btnn" >Logout</button></a>
+                <a href="/aboutus" class="nav-item nav-link" style="color: black;">About Us</a>
+                <a href="contactus" class="nav-item nav-link" style="color: black;">Contact Us</a>
+            </div>
+
+
+
+
+        </div>
+    </nav>
+</div>
+
+
+</body>
+</html>
