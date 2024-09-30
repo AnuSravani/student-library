@@ -38,11 +38,11 @@
     </div>
     
     <div class="col-md-6" style="margin-left: 0px; padding:50px; padding-left:10px;">
-        <h4 style="color:#247d7b; font-size:70px;font-family: Brush Script MT;">{{data.name}}</h4><br>
-        <h4 style="color:#247d7b; font-size:50px;font-family: Brush Script MT;">{{data.author}}</h4><br>
-        <h4 style="color:#247d7b; font-size:50px;font-family: Brush Script MT;">{{data.isbn}}</h4><br>
-        <h4 style="color:#247d7b; font-size:50px;font-family: Brush Script MT;">{{data.category}}</h4><br>
-        <h4 style="color:#247d7b; font-size:50px;font-family: Brush Script MT;">{{data.description}}</h4><br>
+        <h4 style="color:#247d7b; font-size:30px;font-family: Brush Script MT;">Book Name <span>:</span>{{data.name}}</h4><br>
+        <h4 style="color:#247d7b; font-size:30px;font-family: Brush Script MT;">Author    :{{data.author}}</h4><br>
+        <h4 style="color:#247d7b; font-size:30px;font-family: Brush Script MT;">Isbn      :{{data.isbn}}</h4><br>
+        <h4 style="color:#247d7b; font-size:30px;font-family: Brush Script MT;">Category:{{data.category}}</h4><br>
+        <h4 style="color:#247d7b; font-size:30px;font-family: Brush Script MT;">Description:{{data.description}}</h4><br>
         <form action="" method="post" >
             {%csrf_token%}
             <input type="hidden" name="book_id" value="{{ data.id }}" >
